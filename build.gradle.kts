@@ -1,12 +1,12 @@
+group "com.shalan"
+version "1.0-SNAPSHOT"
+
 plugins {
     `kotlin-dsl`
     `java-gradle-plugin`
     `maven-publish`
     id("com.gradle.plugin-publish") version "0.14.0"
 }
-
-group "com.shalan"
-version "1.0-SNAPSHOT"
 
 
 gradlePlugin {
@@ -31,3 +31,8 @@ dependencies {
     implementation("com.android.tools.build:gradle:4.2.1")
 }
 
+pluginBundle {
+    vcsUrl = "https://github.com/sh3lan93/version-manager-android.git"
+    website = "https://github.com/sh3lan93/version-manager-android"
+    tags = listOf("android-plugin", "version-manager")
+}
