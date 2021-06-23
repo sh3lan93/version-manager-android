@@ -1,5 +1,3 @@
-group "com.github.sh3lan93"
-version "1.0"
 
 plugins {
     `kotlin-dsl`
@@ -13,7 +11,7 @@ gradlePlugin {
     plugins {
         create("androidVersionManager") {
             group = "com.github.sh3lan93"
-            version = "1.0"
+            version = "1.1"
             id = "com.github.sh3lan93.android-version-manager"
             displayName = "AndroidVersionManager"
             description =
