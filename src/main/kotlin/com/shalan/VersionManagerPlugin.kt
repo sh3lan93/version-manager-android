@@ -38,7 +38,8 @@ class VersionManagerPlugin : Plugin<Project> {
                         commandLine("git", "log", "-1", "--format=%ct").apply {
                             standardOutput = output
                         }
-                        VERSION_CODE = output.toString().trim().toInt()
+                        VERSION_CODE = if (output.toString().trim().isNotEmpty()) output.toString().trim()
+                            .toInt() else (Date().time / 1000).toInt()
                     } catch (e: Exception) {
                         println("There is an exception happened ${e.localizedMessage}")
                         e.printStackTrace()
