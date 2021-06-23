@@ -1,5 +1,5 @@
-group "com.shalan"
-version "1.0-SNAPSHOT"
+group "com.github.sh3lan93"
+version "1.0"
 
 plugins {
     `kotlin-dsl`
