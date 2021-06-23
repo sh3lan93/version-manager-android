@@ -12,7 +12,8 @@ plugins {
 gradlePlugin {
     plugins {
         create("androidVersionManager") {
-            id = "com.shalan.android-version-manager"
+            version = "1.0"
+            id = "com.github.sh3lan93.android-version-manager"
             displayName = "AndroidVersionManager"
             description =
                 "A manager for manage changing/incrementing verion code and version name of an android application depending on build type"
