@@ -11,7 +11,7 @@ gradlePlugin {
     plugins {
         create("androidVersionManager") {
             group = "com.github.sh3lan93"
-            version = "1.1"
+            version = "1.2"
             id = "com.github.sh3lan93.android-version-manager"
             displayName = "AndroidVersionManager"
             description =
@@ -28,7 +28,7 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
-    implementation("com.android.tools.build:gradle:4.2.1")
+    compileOnly("com.android.tools.build:gradle:7.1.3")
 }
 
 pluginBundle {
