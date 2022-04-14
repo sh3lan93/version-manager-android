@@ -69,6 +69,22 @@ apply plugin: "com.github.sh3lan93.android-version-manager"
 ```
 </details>
 Replace latest version with the version number
+  
+### Example
+in `build.gradle` app module
+```
+plugins {
+    id("com.android.application")
+    kotlin("android")
+    id("com.github.sh3lan93.android-version-manager") version "1.3"
+}
+  
+android{
+  defaultConfig {
+    versionCode = androidVersioning.versionCode
+  }
+}
+```
 
 ### Roadmap
   - [x] version code 
