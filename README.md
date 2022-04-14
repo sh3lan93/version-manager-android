@@ -69,4 +69,7 @@ apply plugin: "com.github.sh3lan93.android-version-manager"
 ```
 </details>
 Replace latest version with the version number
-  
+
+### Roadmap
+  - [x] version code 
+  - [ ] version name 
