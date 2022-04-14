@@ -14,7 +14,8 @@ gradlePlugin {
             id = "com.github.sh3lan93.android-version-manager"
             displayName = "AndroidVersionManager"
             description =
-                "A manager for manage changing/incrementing verion code and version name of an android application depending on build type"
+                "A plugin for changing version code to be the last commit id if the project contains GIT " +
+                        "or the current date if the project doesn't contain GIT"
             implementationClass = "com.shalan.VersionManagerPlugin"
         }
     }
